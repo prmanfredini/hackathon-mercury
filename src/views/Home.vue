@@ -3,8 +3,9 @@
         <h2 class="text-h5 text-center mb-3">Lazer em Lockdown</h2>
         
         <v-carousel
+            class=inicio-imagem
             cycle
-            height="400"
+            height="300"
             hide-delimiter-background
             show-arrows-on-hover
             >
@@ -12,19 +13,15 @@
                 v-for="(slide, i) in slides"
                 :key="i"
                 >
-                <v-sheet
-                    height="100%"
-                >
                     <v-row
                     class="fill-height"
                     align="center"
                     justify="center"
                     >
-                    <img :src="slide.url"/>
+                    <v-img class=imagem :src="slide.url"/>
                         
                     
                     </v-row>
-                </v-sheet>
                 </v-carousel-item>
             </v-carousel>
   
@@ -45,17 +42,19 @@ export default {
   data () {
   return {
   slides: [
-         {url: "https://gamehall.com.br/wp-content/uploads/2020/08/65008-gettyimages-843648918.jpg"},
-         {url: "https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/02/anime-4k.png?resize=576%2C1024&ssl=1"}
+         {url: "https://cdn.ligadegamers.com/imagenes/54-gta-san-andreas-cke.jpg"},
+         {url: "https://s.aficionados.com.br/imagens/we-can_cke.jpg"},
+         {url: "https://cdn.ligadosgames.com/imagens/lasf-of-us.jpg"},
+         {url: "https://s.aficionados.com.br/imagens/berserk-anime.jpg"},
+         {url: "https://cdn.ligadosgames.com/imagens/final-fantasy-vii.jpg"},
+         {url: "https://s.aficionados.com.br/imagens/fullmetalbrotherhood_cke.jpg"}
         ],
   }}
 };
 </script>
 
 <style scoped>
-.inicio-imagem {
-  border-radius: 5px;
-}
+
 p{
     text-align:justify;
 }
