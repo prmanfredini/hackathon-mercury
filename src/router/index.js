@@ -18,7 +18,7 @@ const routes = [
     component: ListaJogos
   },
   {
-    path: '/lista-de-animes',
+    path: '/animes',
     name: 'Lista de Animes',
     component: ListaAnimes
   },
