@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ListaJogos from '../views/ListaJogos.vue'
 import ListaAnimes from '../views/ListaAnimes.vue'
+import InstituicaoLista  from '../views/Setembro.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/animes',
     name: 'Lista de Animes',
     component: ListaAnimes
+  },
+  {
+    path: '/setembro',
+    name: 'Lista de Instituicoes',
+    component: InstituicaoLista
   },
 ]
 
