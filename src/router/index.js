@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
 import ListaJogos from '../views/ListaJogos.vue'
+import ListaAnimes from '../views/ListaAnimes.vue'
 
 Vue.use(VueRouter)
 
@@ -16,9 +16,9 @@ const routes = [
     component: ListaJogos
   },
   {
-    path: '/about',
-    component: About
-  }
+    path: '/animes',
+    component: ListaAnimes
+  },
 ]
 
 const router = new VueRouter({
