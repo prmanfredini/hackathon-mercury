@@ -1,35 +1,32 @@
 <template>
-  <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Lista de Animes</h2>
+ <v-container>
+      <v-row dense>
+        <v-col cols="12"
+        v-for="anime in animesLista" :key="anime.id">
 
-    <v-simple-table>
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <!--<th colspan="2" class="text-left">Clube</th>
-            <th class="text-right">Pontos</th>-->
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="anime in animesLista" :key="anime.id">
-            <div class="title">
-              <div>
-              <img :src="anime.photo" :alt="anime.name" />
+          <v-card
+            color="#385F73"
+            dark
+          >
+          <v-img :src="anime.photo"></v-img>
+            <v-card-title class="text-h5">
+              {{ anime.name }}
+            </v-card-title>
+
+            
+              <div class="genero"> Genero: {{ anime.genre }} </div>
+              
+              <p>adjective</p>
+              <div class="statust">
+                {{ anime.status }}
               </div>
+            
+            <v-card-subtitle>{{ anime.description }}</v-card-subtitle>
 
-              <tr>
-                <span class="pl-2">{{ anime.name }}</span>
-              </tr>
-
-              <td class="text-right">{{ anime.genre }}</td>
-              <td class="text-right">{{ anime.status }}</td>
-              <tr class="text-right">{{ anime.description }}</tr>
-            </div>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
-  </v-container>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -51,3 +48,6 @@ export default {
   },
 };
 </script>
+
+
+
