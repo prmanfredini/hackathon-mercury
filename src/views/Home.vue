@@ -1,5 +1,5 @@
 <template>
-    <v-container id=home>
+    <v-container class=homeApp>
         <h2 class="text-h5 text-center mb-3">Lazer em Lockdown</h2>
         
         <v-carousel
@@ -44,7 +44,6 @@
             Disponibilizamos nossas indicações de Jogos e Animes que podem ajudar em momentos como este,
             mas é sempre importante buscar apoio de profissionais para lidar com essas doenças silenciosas.
         </p>
-        
         <v-btn
             color="#FF3D00"
             outlined
@@ -52,10 +51,7 @@
         >
             Conhecer
         </v-btn>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </v-container>
 </template>
 
