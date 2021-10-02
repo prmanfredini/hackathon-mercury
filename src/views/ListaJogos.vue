@@ -13,7 +13,10 @@
 
             <div class="ficha">
               <div>Genero: {{ jogo.genre }}</div>
-              <div>Plataforma: {{ jogo.platform }}</div>
+              <div>Plataforma: 
+                <span v-for="(plataforma, index) in jogo.platform" :key="index">{{ plataforma + (index + 1 != jogo.platform.length ? ", " : "")}}</span>
+            
+              </div>
               <div>Ano: {{ jogo.year }}</div>
             </div>
           </v-card>
