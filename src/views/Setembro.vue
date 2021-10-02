@@ -11,7 +11,7 @@
           </div>
 
           <div class="ficha">
-              <v-btn color="#FF3D00" outlined :href="instituicao.link">SITE</v-btn>
+              <v-btn color="#FF3D00" outlined :href="instituicao.link" target="_blank">SITE</v-btn>
           </div>
 
         </v-card>
