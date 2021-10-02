@@ -11,7 +11,7 @@
           </div>
 
           <div class="ficha">
-              <a :href="instituicao.link" target="_blank">Site</a>
+              <v-btn color="#FF3D00" outlined :href="instituicao.link">SITE</v-btn>
           </div>
 
         </v-card>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "Lista de Instituicoes",
+  name: "InstituicaoLista",
   data() {
     return {
       instituicaoLista: [],
@@ -54,5 +54,9 @@ export default {
 
 .descricao {
   text-align: justify;
+  
+}
+.ficha {
+    padding: 8px;
 }
 </style>
