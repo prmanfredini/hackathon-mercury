@@ -3,7 +3,7 @@
     
     <v-app-bar 
       app
-      color='#01f32a'
+      color="deep-orange accent-3"
       dark
       hide-on-scroll
       >
