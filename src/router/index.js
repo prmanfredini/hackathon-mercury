@@ -24,7 +24,7 @@ const routes = [
     component: ListaAnimes
   },
   {
-    path: '/setembro',
+    path: '/amarelo',
     name: 'Lista de Instituicoes',
     component: InstituicaoLista
   },
