@@ -8,7 +8,7 @@
       hide-on-scroll
       >
         <v-toolbar-title>
-        TITULO do APP
+         👾 ANIGAMES
         </v-toolbar-title>
     </v-app-bar>
   </v-container>

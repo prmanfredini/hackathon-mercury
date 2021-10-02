@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container >
     <v-row dense>
       <v-col cols="12" v-for="anime in animesLista" :key="anime.id">
         <v-card color="#424242" dark>
