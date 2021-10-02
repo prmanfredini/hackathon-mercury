@@ -26,12 +26,6 @@
             </router-link>
         </v-btn>
 
-    <v-btn>
-      <router-link to="/animes">
-        <v-icon>mdi-information</v-icon><br />
-        <span>Animes</span>
-      </router-link>
-    </v-btn>
   </v-bottom-navigation>
 </template>
 
