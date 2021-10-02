@@ -2,19 +2,18 @@
   <v-container>
     <v-row dense>
       <v-col cols="12" v-for="anime in animesLista" :key="anime.id">
-        <v-card color="#424242" dark >
-          <br> 
-          <v-img class=img
-          :src="anime.photo"></v-img>
+        <v-card color="#424242" dark>
+          <br />
+          <v-img class="img" :src="anime.photo"></v-img>
 
-          <v-card-title class="text-h5">
-            {{ anime.name }}
-          </v-card-title>
+          <div class="nome">
+            <h3> {{ anime.name }} </h3>
+          </div>
 
           <div class="ficha">
             <div>Genero: {{ anime.genre }}</div>
-            
-            <div> {{ anime.status }}</div>
+
+            <div>{{ anime.status }}</div>
           </div>
 
           <v-card-subtitle class="descricao">{{
@@ -47,13 +46,17 @@ export default {
 </script>
 
 <style scoped>
-   .img{
-     margin: 5px;
-     margin-top: -17px;
-     border-radius: 10px;
-   }
+.nome {
+  margin: 15px auto;
+}
 
-    .descricao {
-        text-align: justify;
-    }
+.img {
+  margin: 5px;
+  margin-top: -17px;
+  border-radius: 10px;
+}
+
+.descricao {
+  text-align: justify;
+}
 </style>
