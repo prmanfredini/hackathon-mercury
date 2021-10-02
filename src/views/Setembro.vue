@@ -1,45 +1,41 @@
 <template>
   <v-container >
     <v-row dense>
-      <v-col cols="12" v-for="anime in animesLista" :key="anime.id">
+      <v-col cols="12" v-for="instituicao in instituicaoLista" :key="instituicao.id">
         <v-card color="#424242" dark>
           <br />
-          <v-img class="img" :src="anime.photo"></v-img>
+          <v-img class="img" :src="instituicao.imagem"></v-img>
 
           <div class="nome">
-            <h3> {{ anime.name }} </h3>
+            <h3> {{ instituicao.nome }} </h3>
           </div>
 
           <div class="ficha">
-            <div>Genero: {{ anime.genre }}</div>
-
-            <div>{{ anime.status }}</div>
+              <v-btn color="#FF3D00" outlined :href="instituicao.link" target="_blank">SITE</v-btn>
           </div>
 
-          <v-card-subtitle class="descricao">{{
-            anime.description
-          }}</v-card-subtitle>
         </v-card>
       </v-col>
     </v-row>
+    <br><br>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "AnimesLista",
+  name: "InstituicaoLista",
   data() {
     return {
-      animesLista: [],
+      instituicaoLista: [],
     };
   },
   created() {
     //Estrutura utilizada para trazer dados da internet (consumir API)
-    fetch("https://it3zxc-default-rtdb.firebaseio.com/lazer/animes.json")
+    fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
       .then((response) => response.json())
       .then((json) => {
-        this.animesLista = json;
-        //console.log(this.animesLista);
+        this.instituicaoLista = json;
+
       });
   },
 };
@@ -58,5 +54,9 @@ export default {
 
 .descricao {
   text-align: justify;
+  
+}
+.ficha {
+    padding: 8px;
 }
 </style>
