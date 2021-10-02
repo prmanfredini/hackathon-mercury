@@ -3,8 +3,8 @@
     id="nav"
     grow
     fixed
+    dark
   >
-        
         <v-btn>
             <router-link to="/">
               <v-icon>mdi-home</v-icon><br>
@@ -14,14 +14,14 @@
         
         <v-btn>
             <router-link to="/jogos">
-            <v-icon>mdi-heart</v-icon><br>
+            <v-icon>mdi-google-controller</v-icon><br>
                 <span>Jogos</span>
             </router-link>
         </v-btn>
 
         <v-btn>
             <router-link to="/animes">
-                <v-icon>mdi-information</v-icon><br>
+                <v-icon>mdi-television</v-icon><br>
                 <span>Animes</span>
             </router-link>
         </v-btn>
