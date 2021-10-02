@@ -11,7 +11,7 @@
           </div>
 
           <div class="ficha">
-              <a :src="instituicao.link" target="_blank">Site</a>
+              <a :href="instituicao.link" target="_blank">Site</a>
           </div>
 
         </v-card>
