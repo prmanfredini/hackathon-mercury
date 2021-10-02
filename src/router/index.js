@@ -9,14 +9,17 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: '/games',
+    path: '/jogos',
+    name: 'Lista de Jogos',
     component: ListaJogos
   },
   {
-    path: '/animes',
+    path: '/lista-de-animes',
+    name: 'Lista de Animes',
     component: ListaAnimes
   },
 ]

@@ -1,6 +1,15 @@
 <template>
   <div class="lista-jogos">
-    <p>{{ jogos }}</p>
+    <v-simple-table>
+      <thead>
+        <tr>
+          
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </v-simple-table>
   </div>
 </template>
 
