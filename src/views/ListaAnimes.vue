@@ -1,34 +1,32 @@
 <template>
-  <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Lista de Animes</h2>
+ <v-container>
+      <v-row dense>
+        <v-col cols="12"
+        v-for="anime in animesLista" :key="anime.id">
 
-    <v-simple-table>
-      <template v-slot:default>
-        <tbody>
-          <tr v-for="anime in animesLista" :key="anime.id">
-            <div class="title">
-              <div class="folder">
-                <img :src="anime.photo" :alt="anime.name" />
+          <v-card
+            color="#385F73"
+            dark
+          >
+          <v-img :src="anime.photo"></v-img>
+            <v-card-title class="text-h5">
+              {{ anime.name }}
+            </v-card-title>
+
+            
+              <div class="genero"> Genero: {{ anime.genre }} </div>
+              
+              <p>adjective</p>
+              <div class="statust">
+                {{ anime.status }}
               </div>
+            
+            <v-card-subtitle>{{ anime.description }}</v-card-subtitle>
 
-              <div>
-                <div class="nome">
-                  <span class="text-center">{{ anime.name }}</span>
-                </div>
-
-                <div class="genero">{{ anime.genre }}</div>
-                <div class="status">{{ anime.status }}</div>
-
-                <div class="descricao">
-                  {{ anime.description }}
-                </div>
-              </div>
-            </div>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
-  </v-container>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -50,23 +48,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.title {
-  text-align: center;
-  display: flex;
-  max-width: 90%;
-}
-
-.folder {
-  margin: 20px auto;
-}
-
-.folder img {
-  width: 90vw;
-}
-
-.descricao {
-  text-align: justify;
-}
-</style>

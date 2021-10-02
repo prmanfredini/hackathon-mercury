@@ -30,11 +30,9 @@
 </template>
 
 <script>
-
 export default {
-  name: 'AppBottomBar',
-  
-    data: () => ({ }),
+  name: "AppBottomBar",
 
-  }
+  data: () => ({}),
+};
 </script>

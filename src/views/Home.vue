@@ -11,6 +11,8 @@ Entre elas estão as plataformas de streaming que possuem diversas opções de f
 Livros, jogos e hoje estamos aqui para trazer as nossas indicações.
 Disponibilizamos nossas indicações de Jogos e Animes !!
 </p>
+<br>
+<br>
     </v-container>
 </template>
 
