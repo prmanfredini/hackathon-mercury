@@ -4,26 +4,25 @@
 
     <v-simple-table>
       <template v-slot:default>
-        <thead>
-          <tr>
-            <!--<th colspan="2" class="text-left">Clube</th>
-            <th class="text-right">Pontos</th>-->
-          </tr>
-        </thead>
         <tbody>
           <tr v-for="anime in animesLista" :key="anime.id">
             <div class="title">
-              <div>
-              <img :src="anime.photo" :alt="anime.name" />
+              <div class="folder">
+                <img :src="anime.photo" :alt="anime.name" />
               </div>
 
-              <tr>
-                <span class="pl-2">{{ anime.name }}</span>
-              </tr>
+              <div>
+                <div class="nome">
+                  <span class="text-center">{{ anime.name }}</span>
+                </div>
 
-              <td class="text-right">{{ anime.genre }}</td>
-              <td class="text-right">{{ anime.status }}</td>
-              <tr class="text-right">{{ anime.description }}</tr>
+                <div class="genero">{{ anime.genre }}</div>
+                <div class="status">{{ anime.status }}</div>
+
+                <div class="descricao">
+                  {{ anime.description }}
+                </div>
+              </div>
             </div>
           </tr>
         </tbody>
@@ -51,3 +50,23 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.title {
+  text-align: center;
+  display: flex;
+  max-width: 90%;
+}
+
+.folder {
+  margin: 20px auto;
+}
+
+.folder img {
+  width: 90vw;
+}
+
+.descricao {
+  text-align: justify;
+}
+</style>
