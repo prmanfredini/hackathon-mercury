@@ -1,38 +1,27 @@
 <template>
-  <div class="lista-jogos">
     <v-container>
-      <h2 class="text-h5 text-center mb-3 mt-5">Lista de Jogos</h2>
+      <v-row dense>
+        <v-col cols="12" v-for="jogo in jogos" :key="jogo.id">
+           <v-card color="#424242" dark >
+            <br> 
+            <v-img class=img
+            :src="jogo.photo"></v-img>
 
-      <v-simple-table>
-        <template v-slot:default>
-          <thead>
-            <tr></tr>
-          </thead>
-          <tbody>
-            <tr v-for="jogo in jogos" :key="jogo.id">
-              <div class="title">
-                <div>
-                  <img :src="jogo.photo" :alt="jogo.photo" />
-                </div>
+             <v-card-title class="text-h5">
+              {{ jogo.name }}
+            </v-card-title>
 
-                <tr>
-                  <span class="pl-2">{{ jogo.name }}</span>
-                </tr>
-
-                <td class="text-right">{{ jogo.genre }}</td>
-                <td class="text-right">{{ jogo.platform }}</td>
-                <td class="text-right">{{ jogo.year }}</td>
-                <td class="text-right">
-                  {{ jogo.platform }}
-                </td>
-              </div>
-            </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
-    </v-container>
-  </div>
+            <div class="ficha">
+              <div>Genero: {{ jogo.genre }}</div>
+              <div>Plataforma: {{ jogo.platform }}</div>
+              <div>Ano: {{ jogo.year }}</div>
+            </div>
+          </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
+     
 
 <script>
 export default {
@@ -53,4 +42,13 @@ export default {
 </script>
 
 <style scoped>
+   .img{
+     margin: 5px;
+     margin-top: -17px;
+     border-radius: 10px;
+   }
+
+    .descricao {
+        text-align: justify;
+    }
 </style>
