@@ -18,12 +18,12 @@ Disponibilizamos nossas indicações de Jogos e Animes !!
 
 <script>
 export default {
-    name: 'Home'
-}
+  name: "Home",
+};
 </script>
 
 <style scoped>
 .inicio-imagem {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 </style>>
