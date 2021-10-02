@@ -1,24 +1,29 @@
-# hackathon-voskhod
+# AniGames 👾
+Uma aplicação web feita em Vue.js que utiliza o consumo de API's
 
-## Project setup
-```
-npm install
-```
+## 🛠 Tecnologias:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [HTML/CSS](https://www.w3.org/)
+- [JavaScript](https://www.javascript.com/)
+- [Vue.js](https://vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/en/)
+- [Git](https://git-scm.com/)
 
-### Lints and fixes files
-```
-npm run lint
-```
+## ▶️ Como rodar o projeto?
+`git clone https://github.com/prmanfredini/hackathon-mercury.git`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 🔧 Instalando as dependências:
+`cd hackathon-mercury`
+
+`npm install`
+
+### 🚀 Execute o código:
+`npm run serve`
+
+## 👥 Membros:
+- [heitor-am](https://github.com/heitor-am)
+- [prmanfredini](https://github.com/prmanfredini)
+- [vanriwerson](https://github.com/vanriwerson)
+- [leticiapatrocinio](https://github.com/leticiapatrocinio)
